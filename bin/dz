@@ -1,0 +1,24 @@
+#! /usr/bin/env ruby
+# -*- coding: UTF-8 -*-
+
+require 'dz'
+
+if ARGV.length < 2
+  puts <<EOH
+Usage:
+  dz <input> [<input> ...] <output>
+EOH
+  exit 1
+end
+
+output = ARGV.pop
+out = File.open(output, 'w')
+
+# Trap interrupts to quit cleanly.
+Signal.trap('INT') { out.close;exit 1 }
+
+ARGF.each_line do |l|
+  out.write(DZ.dz2bin(l))
+end
+
+out.close
