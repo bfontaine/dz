@@ -20,6 +20,20 @@ $ dz input.dz output
 Give it two filenames. It’ll read the first one and write binary data into the
 second one. That’s it!
 
+Okay, one more thing: if you give `-` for the input, it'll read on stdin, and if
+you give more than two files, it'll assume that the last one is the output and
+all the others are parts of the input. So,
+
+```sh
+dz input{1,2,3}.dz output.bin
+```
+
+is equivalent to:
+
+```sh
+cat input{1,2,3}.dz | dz - output.bin
+```
+
 ### Syntax
 
 I use `.dz` for input files but you can use what you want, they are plain text

@@ -14,6 +14,9 @@ end
 output = ARGV.pop
 out = File.open(output, 'w')
 
+# '-' means we read on stdin
+ARGV.shift if ARGV.length == 2 and ARGV.first == '-'
+
 # Trap interrupts to quit cleanly.
 Signal.trap('INT') { out.close;exit 1 }
 
