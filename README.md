@@ -1,6 +1,8 @@
 # dz
 
 [![Build Status](https://travis-ci.org/bfontaine/dz.png?branch=master)](https://travis-ci.org/bfontaine/dz)
+[![Gem Version](https://badge.fury.io/rb/dz.png)](http://badge.fury.io/rb/dz)
+[![Coverage Status](https://coveralls.io/repos/bfontaine/dz/badge.png)](https://coveralls.io/r/bfontaine/dz)
 
 **dz** is a dead simple hexadecimal-to-binary tool. It’s used to create binaries
 by hand.
@@ -76,16 +78,7 @@ $ hexdump example
 $ git clone https://github.com/bfontaine/dz.git
 $ cd dz
 $ bundle install
-$ rake test
+$ bundle exec rake test
 ```
 
-Set the `COVERAGE` environment variable to activate the code
-coverage report, e.g.:
-
-```
-$ export COVERAGE=1; rake test
-```
-
-
-It’ll generate a `coverage/index.html`, which you can open in a
-Web browser.
+It’ll generate a `coverage/index.html`, which you can open in a Web browser.
