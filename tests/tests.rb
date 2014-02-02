@@ -12,7 +12,7 @@ test_dir = File.expand_path( File.dirname(__FILE__) )
 SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start { add_filter '/tests/' }
 
-require 'dz'
+require_relative '../lib/dz'
 
 for t in Dir.glob( File.join( test_dir,  '*_tests.rb' ) )
   require t

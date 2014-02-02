@@ -8,7 +8,7 @@ module DZ
     end
 
     def dz2bin(s)
-      hxs = s.gsub(/^#.*?$/, ' ').split(/[^0-9A-Fa-f]/)
+      hxs = s.gsub(/#.*?$/, ' ').split(/[^0-9A-Fa-f]/m)
       hxs.reject!(&:empty?)
 
       hxs.map { |x| x.to_i(16) }.pack('C*')
