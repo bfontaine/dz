@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/bfontaine/dz.png?branch=master)](https://travis-ci.org/bfontaine/dz)
 [![Gem Version](https://badge.fury.io/rb/dz.png)](http://badge.fury.io/rb/dz)
 [![Coverage Status](https://coveralls.io/repos/bfontaine/dz/badge.png)](https://coveralls.io/r/bfontaine/dz)
+[![Dependency Status](https://gemnasium.com/bfontaine/dz.png)](https://gemnasium.com/bfontaine/dz)
 
 **dz** is a dead simple hexadecimal-to-binary tool. It’s used to create binaries
 by hand.
