@@ -5,8 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/bfontaine/dz/badge.png)](https://coveralls.io/r/bfontaine/dz)
 [![Dependency Status](https://gemnasium.com/bfontaine/dz.png)](https://gemnasium.com/bfontaine/dz)
 
-**dz** is a dead simple hexadecimal-to-binary tool. It’s used to create binaries
-by hand.
+**dz** is a dead simple hexadecimal-to-binary tool. It’s handy to create
+binaries by hand (yeah, some people do that).
 
 ## Install
 
